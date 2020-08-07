@@ -537,6 +537,7 @@ private:
                 if (menu_num_S == 1) {//はいなら変更
                     system("cls");
                     FlushConsoleInputBuffer(GetStdHandle(STD_INPUT_HANDLE));//cinバッファ削除
+                    cout << "名前を入力してください：";
                     while (cin >> myname) {
                         if (myname == "") cout << "名前を入力してください!!";
                         else break;
